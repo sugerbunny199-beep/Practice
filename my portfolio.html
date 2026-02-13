@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+font-family: 'Open Sans', sans-serif;
+background: #FFFFFF;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.main {
+background-color: #C1E8FF; 
+border-radius: 10px;
+border: 1px solid orange;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+margin: 10px
+}
+
+.my-image { 
+border-radius: 5px;
+border: 1px solid orange; 
+width: 90%;
+max-width: 400px;
+height: auto;
+margin: 20px auto;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+.about {
+background-color: #C1E8FF; 
+border-radius: 10px;
+border: 1px solid orange;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+margin: 10px;
+padding: 30px;
+display: block;
+}
+.soft {
+color: #666666;
+font-size: 15px;
+text-align: center;
+}
+header{
+background-color: #021024; 
+color: white;
+text-align: center; 
+padding: 12px 10px;  
+ font-size: 18px;     
+ font-weight: 500;
+}
+footer{
+background-color: #021024;
+color: white;
+text-align: center;
+padding:10px;
+margin-top: 0px;
+}
+h1, h2, h3 {
+font-family: 'Playfair Display', serif;
+}
+i {
+  color: #0210A0;
+  margin-right: 5px;
+}
+.contacts-unique {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact {
+  background: #C1E8FF;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #021024;
+  font-weight: 500;
+  text-decoration: none;  
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+  background-color: #A0D4FF;
+}
+  footer {
+    background-color: #021024;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;}
+/* Default unvisited link */
+a:link {
+  color: #0210A0;
+  text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+  color: #800080; 
+  text-decoration: none;
+}
+
+/* Hover state */
+a:hover {
+  color: #FFB347; 
+  text-decoration: underline;
+  transform: scale(1.05); /
+  transition: 0.3s;
+}
+
+/* Active state (while clicking) 
+a:active {
+  color: #FF8000; 
+  transform: scale(0.98); 
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to my portfolio. 
+</h1>
+</header>
+<div class="main">
+<img class="my-image"
+ src="https://i.postimg.cc/26CvbJCn/5f756435cd8aa183a2da586c9968f45c.jpg">
+</div>
+
+
+<main>
+<div class="about">
+<section>
+<h2>Tracy Gold </h2>
+<p class="soft">Aspiring Web Developer | Based in Nigeria</p>
+<h2> About Me </h2>
+<p>I’m a web developer in training, passionate about creating structured, meaningful, and user-friendly websites. I value simplicity, clarity, and continuous growth in every project I take on.
+</p>
+</section>
+
+<section>
+<h2>Let’s Work Together</h2>
+
+<p> If you’re interested in collaborating or building something impactful, I’d love to connect.
+ </p>
+
+<div class="contacts-unique">
+  <a href="mailto:sugerbunny199@gmail.com" class="contact">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  <a href="tel:+2349022766342" class="contact">
+    <i class="fas fa-phone"></i> Phone
+  </a>
+  <a href="https://wa.me/2349022766342" target="_blank" class="contact">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+  <a href="https://instagram.com/yourusername" target="_blank" class="contact">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+</div>
+
+</section>
+</div>
+    <footer>
+  <p>&copy; <span id="year"></span> Tracy Gold. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
